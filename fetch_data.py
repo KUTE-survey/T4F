@@ -72,7 +72,7 @@ history.append({
     'temp': temp,
     'hum':  hum
 })
-history = history[-96:]  # 最大96件（30分おき×2日分）
+history = history[-300:]  # 最大300件（1日分＋余裕）
 
 out = {
     'temperature':     temp,
